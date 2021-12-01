@@ -1,0 +1,13 @@
+<div class="container">
+    <mat-card class="item">
+        <img class="icon" mat-card-image [srcset]="pokemon.sprites.other['official-artwork'].front_default">
+        <mat-card-content class="info">
+            <h3>{{ pokemon.species.name }}</h3>
+            <p>{{ '#' + pokemon.id }}</p>
+            <ul>
+                <li *ngFor="let type of pokemon.types">{{ type.type.name }}</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+</div>
+<button mat-fab class="return-btn" (click)="onReturnClick()">All</button>

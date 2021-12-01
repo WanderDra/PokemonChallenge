@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    width: 230px;
+    height: 350px;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icon{
+    background-color: #f2f2f2;
+}
+
+.return-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,6 @@
+<img [srcset]="pokemon!.sprites.front_default">
+<h3> Choose this pokemon? </h3>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="onConfirmClick()" mat-dialog-close>confirm</button>
+    <button mat-raised-button color="warn" mat-dialog-close>cancel</button>
+</div>
